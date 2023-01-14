@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+@font-face {
+    font-family: GothamBlack;
+    src: url(GothamBold.ttf);
+
+}
+
+
+
+body{
+  background: rgb(29,185,84);
+  background: linear-gradient(0deg, rgba(29,185,84,1) 70%, rgba(0,0,0,1) 100%);
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+}
+.form_head1{
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(29,185,84,1);
+    padding: 30px 0;
+}
+
+.form_head2{
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(29,185,84,1);
+    padding: 30px 0;
+}
+
+
+
+/*Form Styles */
+
+.form_wrapper {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form_wrapper {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form_wrapper .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.form_wrapper .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.form_wrapper .inputbox:last-child {
+  margin-bottom: 0;
+}
+.form_wrapper .inputbox span {
+  transform: translateX(-13px) translateY(-35px);
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+
+.form_wrapper .inputbox button {
+  width: 50%;
+  background: #0A2342;
+  color: #fff;
+  border: #fff;
+  border-radius: 15px;
+}
+.form_wrapper .inputbox:hover button {
+  background: rgb(29,185,84);
+  background: rgba(29,185,84,1);
+  transition: background-color .3s;
+}
+
+
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 50px 200px 200px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.green_grey_table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+
+.green_grey_table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.green_grey_table td, .green_grey_table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.green_grey_table td {
+    border-right: 1px solid black;
+    font-size: 12px;
+}
+
+.green_grey_table thead th {
+    color: #ffffff;
+    background: #1DB954;
+}
+
+
+.green_grey_table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.green_grey_table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .green_grey_table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .green_grey_table thead, .green_grey_table tbody, .green_grey_table thead th {
+        display: block;
+    }
+    .green_grey_table thead th:last-child{
+        border-bottom: none;
+    }
+    .green_grey_table thead {
+        float: left;
+    }
+    .green_grey_table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .green_grey_table td, .green_grey_table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .green_grey_table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .green_grey_table tbody tr {
+        display: table-cell;
+    }
+    .green_grey_table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .green_grey_table tr:nth-child(even) {
+        background: transparent;
+    }
+    .green_grey_table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .green_grey_table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .green_grey_table tbody td {
+        display: block;
+        text-align: center;
+    }
+}

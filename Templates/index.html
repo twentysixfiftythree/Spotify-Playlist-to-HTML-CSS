@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+<style>
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(29,185,84);
+  background: linear-gradient(0deg, rgba(29,185,84,1) 10%, rgba(0,0,0,1) 100%);
+}
+</style>
+
+<div class="form_wrapper">
+<h1 class = form_head2>Spotify Playlist to Table</h1>
+
+
+<form action= "{{url_for('get_playlist')}}" method="post">
+
+
+<div class="inputbox">
+
+
+<input type="text" id="user" name="spotify_user" placeholder="Spotify Username" required = "">
+<span>Username</span>
+</div>
+
+<div class="inputbox">
+
+<input type="text" id="link" name="spotify_playlist" placeholder="Link" required = "required">
+<span>Playlist Link</span>
+</div>
+
+<div class="inputbox">
+<button type="submit">Submit</button>
+</div>
+
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+{% endblock %}

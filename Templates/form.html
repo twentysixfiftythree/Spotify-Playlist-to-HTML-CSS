@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<h1 class = "form_head1">Playlist Table</h1>
+<div class="table-wrapper">
+{% for table in tables %}
+    {{ table|safe }}
+{% endfor %}
+</div>
+
+
+{% endblock %}
